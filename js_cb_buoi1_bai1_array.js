@@ -12,3 +12,12 @@
 
 */
 
+const arr = [1,5,7,8,9,15,8];
+
+// in ra các số chẵn của mảng
+console.log("So chan");
+for(let value of arr) {
+    if(value % 2 == 0) {
+        console.log(value);
+    }
+}
