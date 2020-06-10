@@ -1,6 +1,6 @@
 let arr = [1,5,7,8,9,15];
 // 1.1 print even
-/* 
+*/
 function printEven(n) {
     if(n % 2 == 0){
         console.log(n);
