@@ -13,6 +13,10 @@
 // console.log(person1.name);
 // //đọc hiểu được lợi ích của call ,tương tự viết 1 hàm formatBirthDay theo định dạng DD - MM - YYYY áp dụng cho 2 person
 
+function capitalName(){
+    this.name = this.name.toUpperCase();
+}
+
 function formatBirthDay() {
         this.birthDay = new Date(this.birthDay);
         
@@ -26,7 +30,8 @@ function formatBirthDay() {
         if(day < 10) { 
             day = "0" + day;
         }
-        console.log( day + "-" + month + "-" + year);
+        this.birthDay = day + "-" + month + "-" + year;
+        
     }
 
 var person1 = {
@@ -40,8 +45,7 @@ var person2 = {
 }
 
 
-formatBirthDay.call(person1);
+formatBirthDay.call(person2);
+capitalName.call(person1);
 
-
-
-
+console.log(person2.birthDay);
