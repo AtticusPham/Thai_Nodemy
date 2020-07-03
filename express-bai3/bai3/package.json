@@ -1,0 +1,16 @@
+{
+  "name": "bai3",
+  "version": "1.0.0",
+  "description": "bai3 retrieve the Get query string parameters",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
