@@ -8,6 +8,5 @@ app.use(express.static("public"));
 
 
 app.get('/', function(req, res) {
-    var dir = path.join(__dirname, 'public/home.html');
-    res.sendFile(dir);
+    res.sendFile(path.join(__dirname, 'public/home.html'));
 }).listen(3000)
